@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    --black: rgba(0, 0, 0, 1);
+    --blueberry: rgba(98, 105, 255, 1);
+    --gray: rgba(130, 139, 130, 1);
+    --white: rgba(255, 255, 255, 1);
+    --font-size-m: 20px;
+    --font-size-l: 20px;
+    --font-size-xl: 31px;
+    --font-size-xxl: 40px;
+    --font-family-poppins: 'Poppins';
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    background: linear-gradient(#ffdec0, #ffffff, #f7bf53 100%);
+    /* position: fixed; */
+}
+
+
+/* .background {
+    height: 100%;
+    background: url("img/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+.result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--white);
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: center;
+}
+
+.congratulations {
+    width: 452px;
+    height: 60px;
+    color: var(--blueberry);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxl);
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.you-have-finished-this-quiz {
+    width: 269px;
+    height: 30px;
+    color: var(--gray);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-1);
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.trophy {
+    width: 166px;
+    height: 192px;
+    /* top: 32px;
+    left: 187pc; */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: auto;
+}
+
+.you-score {
+    /* You score */
+    width: 155px;
+    height: 47px;
+    color: #828282;
+    font-family: var(--font-family-poppins);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 10px;
+    margin-bottom: -20px;
+    /* identical to box height */
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+.score-container {
+    width: 70px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    /* Auto layout */
+    flex-direction: row;
+    padding: 10px 25px;
+    /* gap: 10px; */
+    /* Green 3 */
+    background: #6fcf97;
+    border-radius: 20px;
+    /* Inside auto layout */
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+}
+
+.user-score {
+    font-family: var(--font-family-poppins);
+    color: #f2f2f2;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.try-again-container {
+    position: absolute;
+    margin-top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.try-again-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.try-again-image {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.try-again-button:hover {
+    background-color: #45a049;
+}
+
+
+/* bulet */
+
+.bulet1 {
+    border-radius: 50%;
+    position: fixed;
+    width: 1800px;
+    height: 433px;
+    top: -320px;
+    left: -130px;
+    background: linear-gradient(180deg, #fff3c7 0%, #fff3c7 100%);
+}
+
+.bulet2 {
+    border-radius: 50%;
+    position: fixed;
+    width: 1800px;
+    height: 433px;
+    margin-top: 700px;
+    right: -130px;
+    bottom: -320px;
+    background: linear-gradient(180deg, #fff3c7 0%, #fff3c7 100%);
+}

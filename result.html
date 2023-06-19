@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="resultt.css" />
+    <title>Yahoot Quizz! Result</title>
+    <!-- <div class="bg-1"></div> -->
+  </head>
+
+  <body>
+    <div class="bg-1"></div>
+
+    <!-- <div class="bulet1"></div>
+    <div class="bulet2"></div> -->
+
+    <div class="result-container">
+      <div class="card">
+        <h1 id="congratulations" class="congratulations"></h1>
+        <p class="you-have-finished-this-quiz">You have finished this quiz</p>
+        <img class="trophy" src="img/Trophy.png" alt="Trophy" />
+        <div class="you-score">You Score</div>
+        <div class="score-container">
+          <div id="user-score" class="user-score"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="try-again-container">
+      <button id="try_again" class="try-again-button">
+        <img class="try-again-image" src="img/try-again.png" alt="Retry" />
+        TRY AGAIN
+      </button>
+    </div>
+
+    <script>
+      // Get the try again button element
+      const tryAgainButton = document.getElementById('try_again');
+    
+      // Add event listener to the try again button
+      tryAgainButton.addEventListener('click', () => {
+        // Redirect to the index file
+        window.location.href = 'index.html';
+      });
+    </script>
+
+    <script>
+      // Get user score and name from URL parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const correctAnswers = parseInt(urlParams.get('score'));
+      const userName = urlParams.get('user');
+
+     // Calculate the user score
+     userScore = correctAnswers *10
+
+      // Set the user score and name in the HTML
+      const userScoreElement = document.getElementById('user-score');
+      userScoreElement.textContent = `${userScore} / 100`;
+
+      // Display different messages based on the user score
+      const congratulationsElement = document.getElementById('congratulations');
+      if (userScore === 100) {
+        congratulationsElement.textContent = `Congratulations, ${userName}!`;
+      } else if (userScore >= 80 && userScore <= 90) {
+        congratulationsElement.textContent = `Always Made it, ${userName}!`;
+      } else if (userScore >= 10 && userScore <= 70) {
+        congratulationsElement.textContent = `Nice Try, ${userName}!`;
+      }
+
+      console.log(score)
+
+    </script>
+
+
+  </body>
+</html>

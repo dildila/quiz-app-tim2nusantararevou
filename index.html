@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="stylequiz.css" />
+    <div class="bg1">
+    </div>
+    <title>Yahoo Quizz!!</title>
+</head>
+
+<body>
+
+     <!-- Play Music -->
+    <div class="music">
+            <span class="music">Music</span>
+          </div>
+        <label class="switch"> <!--untuk membuat label untuk input checkbox-->
+          <input type="checkbox" id="audioSwitch"> <!--tombol on/off yang akan mengontrol status audio-->
+          <span class="slider round"></span>  <!--untuk membuat tampilan on/off dalam bentuk slider dengan bentuk bulat-->
+        </label>
+    <!-- </div> -->
+      </div>
+
+
+    <!-- Further code here -->
+    <!-- <div class="start-screen">
+        <button id="start-button">Start</button>
+    </div> -->
+
+    <div id="display-container">
+        <div class="header">
+            <div class="number-of-count">
+                <span class="number-of-question">1 of 10 questions</span>
+            </div>
+            <div class="timer-div">
+                <img src="img/time.png" width="30px" height="30px" />
+                <span class="time-left">15s</span>
+            </div>
+        </div>
+        
+        <div id="container">
+            <!-- questions and options will be displayed here -->
+        </div>
+        <button id="next-button">Next</button>
+    </div>
+
+
+    <!-- note: kalau bagian ini diapus, pilihan opsi disoal quiz ilang -->
+    <!-- <div class="score-container hide">
+        <div id="user-score">Demo Score</div>
+        <button id="try_again">Try again</button>
+    </div> -->
+
+    <script src="script quiz.js"></script>
+</body>
+
+</html>
